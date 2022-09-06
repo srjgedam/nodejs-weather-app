@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    {{!-- <link rel="stylesheet" href="../../public/css/styles.css"> --}}
+    
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get weather information</p>
+
+        <form id="form1">
+            <input type="text" id="input1" placeholder="Location">
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+    
+   <script src="js/app.js"></script>
+   {{>footer}}
+</body>
+</html>
