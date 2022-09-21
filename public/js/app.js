@@ -24,8 +24,9 @@ async function fetchweatherinfo(location){
     if (json1.error){
         messageOne.textContent=json1.error
     }else {
-        messageOne.textContent=json1.location
         messageOne.textContent=json1.forecast
+        messageTwo.textContent=json1.location
+        
     }
     
 }
