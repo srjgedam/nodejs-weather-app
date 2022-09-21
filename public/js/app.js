@@ -19,7 +19,7 @@ weatherform.addEventListener('submit',(e)=>{
 })
 
 async function fetchweatherinfo(location){
-    let response= await fetch(`http://localhost:3000/weather?address=${location}`)
+    let response= await fetch(`/weather?address=${location}`)
     let json1=await response.json()
     if (json1.error){
         messageOne.textContent=json1.error

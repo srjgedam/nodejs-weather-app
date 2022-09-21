@@ -11,7 +11,7 @@ const viewsPath=path.join(__dirname,"../templates/views")
 const partialPath=path.join(__dirname,"../templates/partials")
 
 app.use(express.static(publicDirectryPath))
-
+const port=process.env.PORT || 3000
 // for hbs we should use below line of code
 app.set("view engine","hbs") 
 app.set("views",viewsPath)
@@ -90,4 +90,4 @@ app.get("*",(req,res)=>{
     })
 })
  
-app.listen(3000,()=>{console.log("server is up and running on port 3000")})
+app.listen(port,()=>{console.log("server is up and running on port "+port)})
